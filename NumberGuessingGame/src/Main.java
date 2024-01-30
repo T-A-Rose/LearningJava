@@ -21,7 +21,7 @@ public class Main {
         System.exit(0);
     }
 
-    static int getUserGuess(){
+    static int GetUserGuess(){
         try{
             return guessedNum = scanner.nextInt();
         } catch(Exception e){
