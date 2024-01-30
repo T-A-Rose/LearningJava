@@ -27,7 +27,13 @@ public class Main {
     }
 
     static int GetUserGuess(){
-        return guessedNum = scanner.nextInt();
+        try{
+            return guessedNum = scanner.nextInt();
+        } catch(Exception e){
+            System.out.println("You didn't enter a number between 0-10, the input must be a number!");
+            System.exit(0);
+        }
+        return 0;
     }
 
     static void CheckGuessNumber(int guessedNum){
